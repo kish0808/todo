@@ -39,21 +39,14 @@ $(document).ready(function () {
   }
 
 
-  
+  //print todos
   function listTask() {
-    $('#todos').html("");
-   
-    
+    $('#todos').html("");    
     for (i = 0; i < TodoList.length;i++) {         
-
       $('#todos').append('<div>'+ TodoList[i]+ '<span class="glyphicon glyphicon-trash deleteItem" delete-id='+i+' ></span>'+ '<span class="glyphicon glyphicon-edit editItem" data-id='+i+'></span> '+ '<span class="glyphicon glyphicon-ok done" ></span> </div>');   
-      
     }  
-
     $('.editItem').on('click', editItem);//on click edit 
     $('.deleteItem').on('click', deleteItem);
- 
-
   }
 
 
