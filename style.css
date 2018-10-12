@@ -1,25 +1,5 @@
-
-.done{
-	
-	text-decoration:line-through;
-		opacity: 0.5;
-}
-
-	#todos {
-
-		list-style-type:none;
-		margin:0;
-		padding:0;
  
-          }
 
-	#todos li{
-		
-	padding:20px 0px 20px 0px; 
-	border-bottom:1px solid #CCC;
-}
-	
-	
 .deleteItem{
 
 float:right;
@@ -27,22 +7,22 @@ color:red;
 cursor:pointer;
 }	
 
-.completeItem{
+.editItem{
 	
-	margin-right:200px;
-}
-
-
-
-.saveitem{
+	float:right;
+color:red;
 	
-	display:none
 	
 }
 
-.editText{
+.done{
+
+float:right;
+color:red;
+text-decoration: line-through;
+opacity: 0.5;
 	
-	display:none;
 	
 }
+
 	
