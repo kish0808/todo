@@ -43,10 +43,11 @@ $(document).ready(function () {
   function listTask() {
     $('#todos').html("");    
     for (i = 0; i < TodoList.length;i++) {         
-      $('#todos').append('<div>'+ TodoList[i]+ '<span class="glyphicon glyphicon-trash deleteItem" delete-id='+i+' ></span>'+ '<span class="glyphicon glyphicon-edit editItem" data-id='+i+'></span> '+ '<span class="glyphicon glyphicon-ok done" ></span> </div>');   
+      $('#todos').append('<div>'+ TodoList[i]+ '<span class="glyphicon glyphicon-trash deleteItem" delete-id='+i+' ></span>'+ '<span class="glyphicon glyphicon-edit editItem" data-id='+i+'></span> '+ '<span class="glyphicon glyphicon-ok selectItem" select-id='+i+' ></span> </div>');   
     }  
     $('.editItem').on('click', editItem);//on click edit 
     $('.deleteItem').on('click', deleteItem);
+    $('.glyphicon-ok').on('click',selectItem)
   }
 
 
@@ -74,6 +75,18 @@ function deleteItem(){
  // TodoList.splice();
  $('#todos').html(""); //clear
  listTask();//print
+
+}
+
+
+function selectItem(){
+
+
+//  var  newSelectItemId  = $(this).attr('select-id');
+$(this).parent('div').toggleClass("done");
+  
+
+
 
 }
 

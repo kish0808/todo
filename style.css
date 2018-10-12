@@ -12,17 +12,21 @@ cursor:pointer;
 	float:right;
 color:red;
 	
+}
+
+
+.selectItem{
+	
+	float:right;
+color:red;
 	
 }
 
 .done{
 
-float:right;
-color:red;
-text-decoration: line-through;
-opacity: 0.5;
-	
-	
+	text-decoration: line-through;
+	color:red;
+	opacity: 0.5;
 }
 
 	
